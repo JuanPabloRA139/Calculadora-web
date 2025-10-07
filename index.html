@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora simple</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Calculadora</title>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <div class="contenedor">
-    <h1 id="resultado" class="resultado">Resultado: </h1>
-    </div>
-    
-    <div class="">
-    <form action="">
-    <input class="textfield" type="number" id="num1" placeholder="Número 1">
-    <input class="textfield" type="number" id="num2" placeholder="Número 2">
-    </form>
-    </div>
+  <div class="calc-container">
+    <h1 id="display" class="display">0</h1>
 
-
-    <br>
+    <div class="campos">
+      <input type="number" id="valor1" class="campo" placeholder="Primer número">
+      <input type="number" id="valor2" class="campo" placeholder="Segundo número">
+    </div>
 
     <div class="botonera">
-    <button id="sumar" class="botones">Sumar</button>
-    <button id="restar" class="botones">Restar</button>
-    <button id="multiplicar" class="botones">Multiplicar</button>
-    <button id="dividir" class="botones">Dividir</button>
+      <button id="btnSuma" class="boton">+</button>
+      <button id="btnResta" class="boton">−</button>
+      <button id="btnMulti" class="boton">×</button>
+      <button id="btnDiv" class="boton">÷</button>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
